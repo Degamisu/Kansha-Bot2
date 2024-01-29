@@ -17,7 +17,7 @@ module.exports = (app) => {
 
   Thank you for contributing to ${context.payload.repository.name}.
 
-  In the meantime, check the [Wiki](https://your-wiki-url) to see if your error is documented.
+  In the meantime, check the [Wiki](https://github.com/Degamisu/${context.payload.repository.name}) to see if your error is documented.
   `
     });
     return context.octokit.issues.createComment(issueComment);
